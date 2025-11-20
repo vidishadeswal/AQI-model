@@ -1,0 +1,52 @@
+:root {
+    /* Brand Colors */
+    --color-teal: #52c7b8;
+    --color-blue: #3a7bd5;
+    --color-bg-light: #f4f7f6;
+    --color-bg-white: #ffffff;
+    --color-text-primary: #1a202c;
+    --color-text-secondary: #718096;
+    --color-border: #e2e8f0;
+
+    /* AQI Colors */
+    --aqi-good: #00e400;
+    --aqi-moderate: #ffff00;
+    --aqi-unhealthy-sensitive: #ff7e00;
+    --aqi-unhealthy: #ff0000;
+    --aqi-very-unhealthy: #8f3f97;
+    --aqi-hazardous: #7e0023;
+
+    /* Spacing & Layout */
+    --radius-md: 12px;
+    --radius-lg: 24px;
+    /* Larger radius for modern feel */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+    --glass-blur: blur(16px);
+
+    /* Gradients */
+    --gradient-bg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+
+    /* Fonts */
+    --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme='dark'] {
+    --color-bg-light: #0f172a;
+    --color-bg-white: #1e293b;
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #94a3b8;
+    --color-border: #334155;
+
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+
+    --gradient-bg: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    --gradient-card: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.4));
+}

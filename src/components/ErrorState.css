@@ -1,0 +1,63 @@
+.error-container {
+    min-height: 50vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+.error-card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #fed7d7;
+    background-color: #fff5f5;
+}
+
+[data-theme='dark'] .error-card {
+    background-color: rgba(229, 62, 62, 0.1);
+    border-color: rgba(229, 62, 62, 0.2);
+}
+
+.error-icon-bg {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fed7d7;
+    margin-bottom: 0.5rem;
+}
+
+[data-theme='dark'] .error-icon-bg {
+    background-color: rgba(229, 62, 62, 0.2);
+}
+
+.error-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #c53030;
+}
+
+[data-theme='dark'] .error-title {
+    color: #fc8181;
+}
+
+.error-msg {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.retry-btn {
+    margin-top: 0.5rem;
+    background-color: var(--color-teal);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.retry-btn:hover {
+    background-color: #3eb0a2;
+}

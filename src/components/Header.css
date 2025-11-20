@@ -1,0 +1,62 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme='dark'] .header {
+    background-color: rgba(26, 32, 44, 0.8);
+}
+
+.logo-section {
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    flex-shrink: 0;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+}
+
+.app-subtitle {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.actions {
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .icon-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

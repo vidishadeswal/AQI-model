@@ -1,0 +1,37 @@
+.footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-bg-white);
+}
+
+.footer-links {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--color-teal);
+}
+
+.divider {
+    color: var(--color-border);
+}
+
+.footer-text {
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.disclaimer {
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}

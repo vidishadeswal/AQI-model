@@ -1,0 +1,120 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    /* Removed fixed positioning to work with flex layout */
+    z-index: 100;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+    flex-shrink: 0;
+    /* Prevent sidebar from shrinking */
+}
+
+[data-theme='dark'] .sidebar {
+    background: rgba(26, 32, 44, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-header {
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sidebar-logo-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--color-teal), var(--color-blue));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, var(--color-teal), var(--color-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--color-teal);
+    transform: translateX(4px);
+}
+
+[data-theme='dark'] .nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-item.active {
+    background: linear-gradient(90deg, rgba(82, 199, 184, 0.1), transparent);
+    color: var(--color-teal);
+    border-left: 3px solid var(--color-teal);
+}
+
+.sidebar-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
